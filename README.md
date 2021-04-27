@@ -1,0 +1,1 @@
+# testcafe-screenshot-sizing-issue
