@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testcafe screenshot sizing issue</title>
+</head>
+<body>
+  <div id="wrapper"></div>
+</body>
+<script>
+  var wrapper = document.getElementById("wrapper");
+
+  var myHTML = '';
+
+  for (var i = 0; i < 10; i++) {
+    myHTML += '<div>';
+    for (var j = 0; j < 10; j++) {
+      myHTML += '<div class="test-box">' + (j + 1) + '</div>';
+    }
+    myHTML += '</div>';
+  }
+  wrapper.innerHTML = myHTML
+
+</script>
+<style>
+  .test-box {
+      width: 80px;
+      height: 80px;
+      margin: 8px;
+      display: inline-block;
+      border: 2px solid #1C6EA4;
+  }
+
+  body {
+      margin: 0;
+      max-width: 1024px;
+  }
+</style>
+</html>

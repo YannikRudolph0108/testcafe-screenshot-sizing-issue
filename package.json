@@ -1,0 +1,26 @@
+{
+  "name": "testcafe-screenshot-sizing-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 serve --name dummy-serve",
+    "stop": "pm2 delete dummy-serve",
+    "test": "pm2 serve --name screenshot-test-serve && testcafe chrome:headless screenshot-test.js && pm2 delete screenshot-test-serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YannikRudolph0108/testcafe-screenshot-sizing-issue.git"
+  },
+  "author": "Yannik Rudolph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YannikRudolph0108/testcafe-screenshot-sizing-issue/issues"
+  },
+  "homepage": "https://github.com/YannikRudolph0108/testcafe-screenshot-sizing-issue#readme",
+  "dependencies": {
+    "pm2": "^4.5.6",
+    "serve": "^11.3.2",
+    "testcafe": "^1.14.0"
+  }
+}
