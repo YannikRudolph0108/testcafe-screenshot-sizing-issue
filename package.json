@@ -20,7 +20,6 @@
   "homepage": "https://github.com/YannikRudolph0108/testcafe-screenshot-sizing-issue#readme",
   "dependencies": {
     "pm2": "^4.5.6",
-    "serve": "^11.3.2",
     "testcafe": "^1.14.0"
   }
 }
