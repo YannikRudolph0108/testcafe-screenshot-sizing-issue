@@ -1,9 +1,7 @@
-fixture `Screenshot test`// declare the fixture
-  .page `http://127.0.0.1:8080`;  // specify the start page
+fixture `Screenshot test suite`
+  .page `http://127.0.0.1:8080`;
 
-
-//then create a test and place your code there
-test('My first test', async t => {
+test('Screenshot test', async t => {
   await t
     .resizeWindow(1050, 768)
     .takeScreenshot({
