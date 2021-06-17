@@ -1,0 +1,18 @@
+name: Generate screenshot
+on:
+  workflow_dispatch:
+
+jobs:
+  generate_screenshot:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - run: npm ci
+    - run: npm test
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Screenshot
+        path: screenshots/
