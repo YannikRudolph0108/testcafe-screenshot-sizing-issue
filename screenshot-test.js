@@ -3,7 +3,7 @@ fixture `Screenshot test suite`
 
 test('Screenshot test', async t => {
   await t
-    .resizeWindow(1050, 768)
+    .resizeWindow(1024, 768)
     .takeScreenshot({
       path: '/dummy-screenshot' + new Date().getTime(),
       fullPage: true
