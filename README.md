@@ -19,6 +19,7 @@ npm i
 npm test
 ```
 
+In addition to running the command locally, one can test it with the github actions workflow provided in this project => `.github/workflows/generate_screenshot.yml`.
 ### Example screenshot
 
 ![](example-screenshot.png)
