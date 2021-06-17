@@ -5,7 +5,7 @@ test('Screenshot test', async t => {
   await t
     .resizeWindow(1024, 768)
     .takeScreenshot({
-      path: '/dummy-screenshot' + new Date().getTime(),
+      path: '/dummy-screenshot',
       fullPage: true
     });
 });
