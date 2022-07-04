@@ -1,0 +1,14 @@
+name: Test Expression
+on:
+  workflow_dispatch:
+
+jobs:
+  test_expression:
+    name: Test Expression
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo start
+          echo ${{github.event_name}}
+          echo ${{github.event.inputs.continue-on-mongo-error}}
+          echo ${{fromJSON(github.event.inputs.continue-on-mongo-error) || github.event_name == 'workflow_dispatch'}}
